@@ -35,7 +35,7 @@ jobs:
       - name: Build app
         run: |
           go mod download
-          go build -o rest-api/m ./cmd/rest-api
+          go build -o rest-api ./cmd/rest-api
       - name: Deploy to VM
         run: | 
           sudo apt-get install -y ssh rsync
