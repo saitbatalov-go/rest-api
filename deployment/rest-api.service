@@ -1,0 +1,15 @@
+[Unit]
+Description=Rest Api
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/apps/rest-api
+ExecStart=/root/apps/rest-api/rest-api
+Restart=always
+RestartSec=4
+StandardOutput=inherit
+EnvironmentFile=/root/apps/rest-api/config.env
+
+[Install]
+WantedBy=multi-user.target
