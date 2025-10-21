@@ -11,7 +11,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      HOST: ssh root@185.161.65.189
+      HOST: root@185.161.65.189
       DEPLOY_DIRECTORY: /root/apps/rest-api
       CONFIG_PATH: /root/apps/rest-api/config/prod.yaml
       ENV_FILE_PATH: /root/apps/rest-api/config.env
